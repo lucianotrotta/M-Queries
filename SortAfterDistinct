@@ -1,0 +1,5 @@
+let
+    SortAfterDistinct = (x) =>
+    List.Transform(List.Sort(List.Distinct(Text.Split(x,";"))), Text.Trim)
+in
+    SortAfterDistinct
